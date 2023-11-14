@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff00;
+    margin: 0px;
+}
+
+header {
+    background-color: #deacd7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+nav {
+    background-color: #4f435f;
+    text-align: center;
+}
+
+nav a {
+    padding: 14px 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #7f667e;
+}
+
+footer {
+    background-color: #4f435f;
+    color:#f8f7ca;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#pic1{
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+#name{
+    font-size: 50px;
+}
+
+ul{
+    margin-left: 100px;
+}
+
+.p1{
+    font-size: 20px;
+}
+
+pre{
+    font-size: 110%;
+}
+
+@media screen and (max-width:800px) {
+
+    article,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 15px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        height: 90%;
+    }
+}
+#allpie {
+    display: flex;
+    margin-top: 10px;
+}
+
+#allpie div{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    margin: 5px;
+}

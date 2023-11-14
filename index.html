@@ -10,36 +10,72 @@
 
 <body>
     <header>
-        <h1>個人履歷</h1>
-        <div id="slogan">人生就是要快樂，不開心的事改天再想</div>
+        <h1 id="title">個人履歷</h1>
+        <div title="slogan">人生就是要快樂，不開心的事改天再想</div>
     </header>
     <nav>
         <a href="#about">關於我</a>
         <a href="#skills">專業技能</a>
-        <a href="#">經歷</a>
-        <a href="#">聯絡資訊</a>
+        <a href="#experience">經歷</a>
+        <a href="#information">聯絡資訊</a>
     </nav>
     <main>
-        <section id="about">
-            <img src="images/1699966109361.jpg" width="250px">
-            <div>
-                <p>張心柔</p>
-                <p>中原大學資管系</p>
-                <p>8/4 獅子座 女</p>
-                <p>耐心、專注、喜歡看比賽</p>
-                <pre overflow-x: scroll;> 在國高中時期接觸過許多關於程式設計的比賽及營隊
-                        為我開起了資訊科技的大門
-                            也是因為如此讓我對這個領域擁有熱情
+        <article>
+            <section id="about">
+                <img id="pic1" src="images/myself.jpg" width="250px">
+                <div>
+                    <p id="name">張心柔</p>
+                    <div class="p1">中原大學資管系</div>
+                    <div class="p1">8/4 獅子座 女</div>
+                    <div class="p1">耐心、專注、喜歡看刺激的比賽</div>
+                    <pre> 在國高中時期接觸過許多關於程式設計的比賽及營隊
+                            為我開起了資訊科技的大門
+                                也是因為如此讓我對這個領域擁有熱情
                     </pre>
-                <img src="images/ig.jpg" width="5%">
-                <img src="images/fb.png" width="5%">
-                <img src="images/github.png" width="5%">
+                    <img src="images/ig.jpg" width="10%">
+                    <img src="images/fb.png" width="10%">
+                    <img src="images/github.png" width="10%">
+                </div>
+            </section>
+        </article>
+        <aside id="skills">
+            <h2>專業技能</h2>
+            <div id="allpie">
+                <div id="pie1">
+                    PYTHON
+                </div>
+                <div id="pie2">
+                    JAVA
+                </div>
+                <div id="pie3">
+                    C++
+                </div>
+                <div id="pie4">
+                    HTML
+                </div>
+                <div id="pie5">
+                    CSS
+                </div>
+            </div>
+        </aside>
+        <div class="clearfix"></div>
+        <section id="experience">
+            <h2>個人經歷</h2>
+            <div>
+                科技玩轉kodu營
+            </div>
+            <div>
+                企業概論專案
+            </div>
+            <div>
+                ACG動漫研究社
             </div>
         </section>
-        <section id="skills">
-
-        </section>
     </main>
+    <footer id="information">
+        <h2>聯絡資訊</h2>
+        Email: zxr52090114@gail.com
+    </footer>
 </body>
 
 </html>
