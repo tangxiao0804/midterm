@@ -3,16 +3,21 @@
 }
 
 body {
-    background-color: #ffffff00;
+    background-color: #f7c6eb4c;
     margin: 0px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 header {
     background-color: #deacd7;
-    color: white;
+    color: #4f435f;
     text-align: center;
     padding: 20px;
     margin: 0px;
+}
+
+#title{
+    font-size: 50px;
 }
 
 nav {
@@ -36,6 +41,10 @@ footer {
     color:#f8f7ca;
     text-align: center;
     padding: 10px;
+}
+
+footer div{
+    color: #4f435f; 
 }
 
 main {
@@ -66,17 +75,108 @@ aside {
 #name{
     font-size: 50px;
 }
-
-ul{
-    margin-left: 100px;
-}
-
 .p1{
     font-size: 20px;
 }
 
 pre{
     font-size: 110%;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.pic{
+    margin-right: 40px;
+}
+
+
+#allbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#allbar div{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container{
+    width: 300px;
+    height: 1px;
+    border-radius: 25px;
+    background: #c7c4c4;
+    position: relative;
+    left: 28%;
+    top: 15px;
+}
+
+#c1 {
+    width: 90%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #0f0;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+}
+
+#c2 {
+    width: 70%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #0f0;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+}
+
+#c3 {
+    width: 30%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #0f0;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+}
+
+#c4 {
+    width: 70%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #0f0;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+}
+
+#c5 {
+    width: 70%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #0f0;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+}
+
+#experience h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+#experience div{
+    display: flex;
+    text-align: center;
+}
+
+.exp{
+    flex: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
 }
 
 @media screen and (max-width:800px) {
@@ -84,28 +184,11 @@ pre{
     article,
     aside {
         float: none;
-        width: 100%;
-    }
-
-    .card {
-        padding: 10px;
-        margin: 15px 0px;
+        width: 50%;
     }
 
     img {
         max-width: 100%;
         height: 90%;
     }
-}
-#allpie {
-    display: flex;
-    margin-top: 10px;
-}
-
-#allpie div{
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    background-color: #ddd;
-    margin: 5px;
 }
