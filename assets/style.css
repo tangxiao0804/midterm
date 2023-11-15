@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
@@ -16,7 +17,7 @@ header {
     margin: 0px;
 }
 
-#title{
+#title {
     font-size: 50px;
 }
 
@@ -38,54 +39,71 @@ nav a:hover {
 
 footer {
     background-color: #4f435f;
-    color:#f8f7ca;
+    color: #f8f7ca;
     text-align: center;
     padding: 10px;
 }
 
-footer div{
-    color: #4f435f; 
+footer div {
+    color: #4f435f;
 }
 
 main {
     padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-article {
-    float: left;
-    width: 50%;
+.up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
 }
 
+article,
 aside {
-    float: right;
-    width: 50%;
-    text-align: center;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+aside h2 {
+    text-align: center
+}
+
+#about{
+    margin-left: 100px;
 }
 
 .clearfix {
     clear: both;
 }
 
-#pic1{
+#pic1 {
     border-radius: 50%;
     margin-right: 20px;
     float: left;
 }
 
-#name{
+#name {
     font-size: 50px;
 }
-.p1{
+
+.p1 {
     font-size: 20px;
 }
 
-pre{
+pre {
     font-size: 110%;
     font-family: 'Noto Serif TC', serif;
 }
 
-.pic{
+.pic {
     margin-right: 40px;
+}
+
+#skills h2 {
+    font-size: 40px;
 }
 
 
@@ -93,22 +111,22 @@ pre{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    margin-left: 250px;
 }
 
-#allbar div{
-    flex: 1;
-    text-align: center;
+#allbar div {
+    align-items: center;
     padding: 10px;
     margin: 5px;
+    box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 300px;
     height: 1px;
     border-radius: 25px;
     background: #c7c4c4;
     position: relative;
-    left: 28%;
     top: 15px;
 }
 
@@ -118,7 +136,7 @@ pre{
     border-radius: 25px 0 0 25px;
     background: #99ad6c;
     position: absolute;
-    top:-5px;
+    top: -5px;
     left: -5px;
 }
 
@@ -128,7 +146,7 @@ pre{
     border-radius: 25px 0 0 25px;
     background: #99ad6c;
     position: absolute;
-    top:-5px;
+    top: -5px;
     left: -5px;
 }
 
@@ -138,7 +156,7 @@ pre{
     border-radius: 25px 0 0 25px;
     background: #99ad6c;
     position: absolute;
-    top:-5px;
+    top: -5px;
     left: -5px;
 }
 
@@ -148,7 +166,7 @@ pre{
     border-radius: 25px 0 0 25px;
     background: #99ad6c;
     position: absolute;
-    top:-5px;
+    top: -5px;
     left: -5px;
 }
 
@@ -158,42 +176,79 @@ pre{
     border-radius: 25px 0 0 25px;
     background: #99ad6c;
     position: absolute;
-    top:-5px;
+    top: -5px;
     left: -5px;
 }
 
 #experience h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+}
+.pic2{
+    text-align: center;
 }
 
-#experience div{
-    display: flex;
-    flex-direction: column;
-}
-
-.exp1, .exp3{
-    flex: auto;
+.text{
     text-align: left;
-    padding: 10px;
-    margin: 5px;
+}
+
+.text h3{
     font-size: 30px;
 }
 
-.exp2{
-    flex: auto;
-    text-align: right;
-    padding: 10px;
-    margin: 5px;
-    font-size: 30px;
+table{
+    margin-bottom: 50px;
+    table-layout:fixed ;
+    background-color: antiquewhite;
+    border-radius: 5%;
 }
 
-@media screen and (max-width:800px) {
+.pic{
+    transform:scale(1,1);transition: all 1s ease-out;
+}
 
-    article,aside {
+.pic:hover{
+    transform:scale(0.9,0.9);
+}
+
+@media screen and (max-width: 800px) {
+
+    article,
+    aside {
         float: none;
-        width: 70%;
+        width: 100%;
         text-align: center;
         align-self: center;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    .p1 {
+        font-size: 16px;
+    }
+
+    #experience h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+        left: 0;
     }
 }
